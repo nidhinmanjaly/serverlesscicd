@@ -5,7 +5,7 @@ phases:
     commands:
     - rm package-lock.json
     - npm install --silent --no-progress -g npm
-    - npm install --silent --no-progress -g serverless
+    - npm install --silent --no-progress -g serverless@2.14.0
     - npm --version
   pre_build:
     commands:
