@@ -6,14 +6,3 @@ provider:
   environment:
     STAGE: ${opt:stage}
 
-functions:
-  gimmetime:
-    handler: handler.gimmetime
-    events:
-      - http:
-          path: /time
-          method: get
-          request:
-            parameters:
-              querystrings:
-                tz: true
