@@ -2,7 +2,9 @@ service: gimme-time
 
 provider:
   name: aws
-  runtime: nodejs12.x
+  runtime: nodejs8.10
+  environment:
+    STAGE: ${opt:stage}
 
 functions:
   gimmetime:
@@ -15,5 +17,3 @@ functions:
             parameters:
               querystrings:
                 tz: true
-plugins:
-  - serverless-offline
