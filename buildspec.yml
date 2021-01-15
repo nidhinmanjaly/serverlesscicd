@@ -25,6 +25,6 @@ artifacts:
 reports:
   codecoverage:
     files:
-      - '**/*'
+      - coverage/*
     file-format: 'JACOCOXML'
   
