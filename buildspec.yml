@@ -12,7 +12,7 @@ phases:
     commands:
     - mkdir -p test
     - npm install --silent --no-progress
-    - npm install jest
+    - npm install --save-dev jest
     - npm install jest-junit 
   build:
     commands:
