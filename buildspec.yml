@@ -27,4 +27,4 @@ reports:
     files:
       - '**/*'
     file-format: 'JACOCOXML'
-    base-directory: test 
+  
