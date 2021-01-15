@@ -13,13 +13,13 @@ phases:
  
   build:
     commands:
-    - npm test --coverage 
+    - npm test -- --coverage 
 
           
     
 reports:
   codecoverage:
     files:
-      - '**/*.xml'
+      - '**/*.'
     file-format: 'JACOCOXML'
     base-directory: test
