@@ -17,13 +17,6 @@ phases:
     - npm test --coverage 
 
           
-reports:
-  jest_report:
-    files:
-       - '**/*'
-    file-format: JUNITXML
-    base-directory: test
-    
     
 reports:
   codecoverage:
