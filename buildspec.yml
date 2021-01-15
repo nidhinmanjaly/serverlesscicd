@@ -1,7 +1,6 @@
 version: 0.2
 
 phases:
-  install:
     commands:
     - rm package-lock.json
     - npm install --silent --no-progress -g npm
@@ -16,10 +15,7 @@ phases:
     commands:
     - npm run-script lint
     - npm test
-    - mkdir -p target/stg
-    - mkdir target/prod
-    - serverless package --package target/stg --stage stg -v -r us-east-1
-    - serverless package --package target/prod --stage prod -v -r us-east-1
+   
 
 
   
