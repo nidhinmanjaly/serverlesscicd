@@ -1,13 +1,16 @@
 version: 0.2
 
 phases:
+  install:
+    runtime-versions:
+      nodejs: 10
     commands:
-    - rm package-lock.json
     - npm install --silent --no-progress -g npm
     - npm install --silent --no-progress -g serverless
     - npm --version
   pre_build:
     commands:
+    - mkdir -p test
     - npm install --silent --no-progress
     - npm install jest
     - npm install jest-junit 
@@ -15,7 +18,8 @@ phases:
     commands:
     - npm run-script lint
     - npm test
-   
+    - npm test --coverage 
+
 
 
   
