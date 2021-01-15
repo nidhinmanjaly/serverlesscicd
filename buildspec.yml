@@ -5,8 +5,7 @@ phases:
     runtime-versions:
       nodejs: 10
     commands:
-    - npm install --silent --no-progress -g npm
-    - npm install --silent --no-progress -g serverless
+    - npm install
     - npm --version
   pre_build:
     commands:
