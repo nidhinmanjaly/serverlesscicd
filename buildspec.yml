@@ -5,22 +5,28 @@ phases:
     commands:
     - rm package-lock.json
     - npm install --silent --no-progress -g npm
-    - npm install --silent --no-progress -g serverless@2.14.0
+    - npm install --silent --no-progress -g serverless
     - npm --version
   pre_build:
     commands:
     - npm install --silent --no-progress
+    - npm install jest
+    - npm install jest-junit 
   build:
     commands:
     - npm run-script lint
-    - npm run test
+    - npm test
     - mkdir -p target/stg
     - mkdir target/prod
     - serverless package --package target/stg --stage stg -v -r us-east-1
     - serverless package --package target/prod --stage prod -v -r us-east-1
 
-artifacts:
-  files:
-  - target/**/*
-  - serverless.yml
-  - deploy.sh
+
+  
+          
+reports:
+  jest_report:
+    files:
+       - "myreport.xml"
+    file-format: JUNITXML
+    base-directory: test
