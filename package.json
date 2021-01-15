@@ -7,6 +7,9 @@
     "lint": "eslint *.js",
     "test": "jest"
   },
+  "jest": {
+    "collectCoverage": true
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/quantica-io/gimme-time.git"
