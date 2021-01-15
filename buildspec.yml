@@ -13,7 +13,7 @@ phases:
  
   build:
     commands:
-    -npm test
+    - npm test
     - npm test -- --coverage 
 
 reports:
