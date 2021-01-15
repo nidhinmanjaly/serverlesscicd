@@ -16,12 +16,15 @@ phases:
     commands:
     - npm test
     - npm test -- --coverage 
+  artifacts:
+    files:
+       - '**/*'
 
         
     
 reports:
   codecoverage:
     files:
-      - '**/*.'
+      - '**/*'
     file-format: 'JACOCOXML'
     base-directory: test 
