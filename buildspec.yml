@@ -16,19 +16,9 @@ phases:
     commands:
     - npm test
     - npm test -- --coverage 
-artifacts:
-    files:
-       - '**/*'
-       
-       
-reports:
-  jest_report:
-    files:
-       - "myreport.xml"
-    file-format: JUNITXML
-    base-directory: test
 
-        
+       
+             
     
 reports:
   codecoverage:
