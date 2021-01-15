@@ -23,3 +23,11 @@ reports:
        - '**/*'
     file-format: JUNITXML
     base-directory: test
+    
+    
+reports:
+  codecoverage:
+    files:
+      - '**/*'
+    file-format: 'JACOCOXML'
+    base-directory: test
