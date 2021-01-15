@@ -16,7 +16,7 @@ phases:
     commands:
     - npm test
     - npm test -- --coverage 
-  artifacts:
+artifacts:
     files:
        - '**/*'
 
