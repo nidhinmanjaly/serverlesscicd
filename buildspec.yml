@@ -5,7 +5,6 @@ phases:
     runtime-versions:
       nodejs: 10
     commands:
-    - npm install
     - npm install --save-dev jest
     - npm install jest-junit 
   pre_build:
@@ -18,9 +17,6 @@ phases:
     - npm test
     - npm test --coverage 
 
-
-
-  
           
 reports:
   jest_report:
