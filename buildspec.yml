@@ -26,5 +26,5 @@ reports:
   codecoverage:
     files:
       - coverage/*
-    file-format: 'JACOCOXML'
+    file-format: 'CLOVERXML'
   
