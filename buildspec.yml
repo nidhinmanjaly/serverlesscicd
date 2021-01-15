@@ -10,6 +10,7 @@ phases:
   pre_build:
     commands:
     - mkdir -p test
+    - mkdir -p coverage
  
   build:
     commands:
@@ -28,4 +29,4 @@ reports:
     files:
       - '**/*.'
     file-format: 'JACOCOXML'
-    base-directory: test
+    base-directory: coverage 
