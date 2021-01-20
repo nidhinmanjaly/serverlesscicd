@@ -23,8 +23,6 @@ reports:
       -  test/*
     file-format: 'JUNITXML'
              
-    
-reports:
   codecoverage:
     files:
       - coverage/*
