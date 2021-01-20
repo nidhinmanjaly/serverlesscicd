@@ -16,8 +16,12 @@ phases:
     commands:
     - npm test
     - npm test -- --coverage 
-
-       
+    
+reports:
+  node-reports:
+    files:
+      -  test/*
+    file-format: 'JUNITXML'
              
     
 reports:
